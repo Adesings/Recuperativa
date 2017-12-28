@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Predio.Models.Vaca>
+
+<h2>Listado de Animales</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <thead>
+        <th>Diio</th>
+        <th>Nombre</th>
+        <th>Sexo</th>
+        <th>Raza</th>
+        <th>Promedio</th>
+        <th colspan="2">Action</th>
+    </thead>
+    <tbody>
+        @foreach (Predio.Models.Vaca v in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(m => v.Codigo)</td>
+                <td>@Html.DisplayFor(m => v.Nombre)</td>
+                <td>@Html.DisplayFor(m => v.Sexo)</td>
+                <td>@Html.DisplayFor(m => v.Raza)</td>
+                <td>@Html.DisplayFor(m => v.Promedio)</td>
+                <td>@Html.ActionLink("Ver Ficha", "Ficha", new { codigo = v.Codigo })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

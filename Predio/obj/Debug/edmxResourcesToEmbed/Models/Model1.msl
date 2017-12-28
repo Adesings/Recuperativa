@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PredioModelStoreContainer" CdmEntityContainer="PredioEntities2">
+    <EntitySetMapping Name="Vacas">
+      <EntityTypeMapping TypeName="PredioModel.Vaca">
+        <MappingFragment StoreEntitySet="Vacas">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="raza" ColumnName="raza" />
+          <ScalarProperty Name="promedio" ColumnName="promedio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
